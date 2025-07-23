@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who's That Pokémon?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div id="loader">
+  <img src="poke-ball.png" alt="Loading" class="pokeball-loader">
+  <p style="text-align: center;">Searching for wild Pokémon...</p>
+</div>
+
+
+
+  <div class="container">
+    <div class="card">
+      <div class="title">Who's That Pokémon?</div>
+      <div class="subtitle">Guess the Pokémon from the silhouette</div>
+
+      <div class="image-wrapper">
+        <img id="pokemon-image" src="" alt="Guess the Pokémon">
+        
+      </div>
+
+      <div class="options-grid" id="options-container"></div>
+      <div class="feedback hidden" id="feedback"></div>
+    </div>
+
+    <div class="card hidden" id="result-card">
+      <div class="result-title">Quiz Completed!</div>
+      <div class="score" id="score"></div>
+      <div class="feedback" id="final-feedback"></div>
+      <button class="btn primary" onclick="startGame()">Play Again</button>
+    </div>
+  </div>
+
+  <div id="funFactBox" class="fun-fact hidden"></div>
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>

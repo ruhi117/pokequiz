@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-image: url('pokewallpaper.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* optional */
+
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: #d9faff;
+   /* fallback background */
+}
+
+.hidden {
+  display: none;
+}
+body {
+  cursor: url('Link hehhee.ani'), auto;
+}
+button {
+  cursor: url('Link hehhee.ani'), pointer;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0c10;
+  color: #ffcb05;
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.pokeball-loader {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+.pokeball-loader {
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #faf7e4cc;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.title {
+  font-size: 18px;
+  color: #e91e63;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.image-wrapper {
+  border: 2px dashed #164160;
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #eaec7c;
+  margin-bottom: 20px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.options-grid button {
+  padding: 12px;
+  font-size: 12px;
+  background-color: #58d9ea;
+  color: #222;
+  border: 2px solid #1f8580;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.options-grid button:hover {
+  background-color: #d7da3e;
+  color: #000;
+  border-color: #ff9800;
+}
+
+.feedback {
+  font-size: 14px;
+  color: #4caf50;
+  margin: 10px;
+}
+
+.result-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #009688;
+  margin: 10px;
+}
+
+.score {
+  font-size: 14px;
+  margin: 10px;
+}
+
+#result-card {
+  width: 90%;
+  max-width: 300px; 
+  height: 200px;/* increase this to make it wider */
+  padding: 30px;     /* add more space inside */
+  font-size: 1.2rem; /* larger text */
+  align-items: center;
+  border-radius: 12px;
+  margin: 40px auto; 
+ 
+  text-align: center;
+}
+
+
+.btn.primary {
+  padding: 12px 20px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn.primary:hover {
+  background-color: #1976d2;
+}
+
+/* Silhouette */
+.silhouette {
+  filter: brightness(0) invert(1) blur(3px);
+}
+
+.reveal {
+  filter: none;
+}
+
+.pokemon-reveal-anim {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(1.1); }
+  60%  { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+
+/* Fun Fact Box */
+#funFactBox {
+  margin-top: 20px;
+  padding: 14px 20px;
+  background-color: #e1f5fe;
+  border-left: 6px solid #03a9f4;
+  font-style: italic;
+  border-radius: 10px;
+  color: #0277bd;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(3, 169, 244, 0.2);
+}
